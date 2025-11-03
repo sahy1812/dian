@@ -1,0 +1,11 @@
+.fecha{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.fecha span{
+    text-shadow: 5px 5px 20px rgba(184, 27, 27, 0.84);
+}

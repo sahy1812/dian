@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'mr_beast';
+    src: url(../media/fonts/KOMIKAX_.ttf);
+}
+
+
+body{
+    margin-top: 0;
+    font-family: 'mr_beast';
+    position: relative;
+    color: aliceblue;
+    overflow-x: hidden;
+
+    padding-bottom: 0;
+    margin: 0;
+   
+    /* background-repeat:space; */
+    min-height: 100%;
+}
+
+.background{
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    background: url(../media/backgrounds/peppa.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: moveBackgorund 30s infinite;
+    background-repeat-y: repeat;
+}
+
+main{
+    max-width: 1800px;
+    min-width: 300px;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 120vh;
+    position: relative;
+}
+
+.main{
+    
+    max-width: 1800px;
+    min-width: 300px;
+    margin: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    top: 40px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translÃºcido */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde translÃºcido */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Sombra suave */
+    backdrop-filter: blur(5px); /* Fondo desenfocado */
+    -webkit-backdrop-filter: blur(5px); /* Fondo desenfocado */
+    
+
+}
+
+.leyenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@keyframes moveBackgorund {
+    0%{
+        background-position:-200px 0px;
+    }
+    50%{
+        background-position:-800px 0px;
+    }
+    100%{
+        background-position:-200px 0px;
+    }
+}
+
+.deslizar{
+    animation: deslizarAnimacionUp 4s infinite;
+    margin-bottom: 5px;
+}
+
+@keyframes deslizarAnimacion {
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    40%{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    60%{
+        opacity: 0;
+        transform: translateY(20px);        
+    }
+    70%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes deslizarAnimacionUp {
+    0%{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    40%{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    60%{
+        opacity: 0;
+        transform: translateY(0x);        
+    }
+    70%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+#informacionImportante{
+    width: 90%;
+}

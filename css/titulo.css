@@ -1,0 +1,28 @@
+
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.titulo h1{
+    margin-bottom: 0;
+    font-size: 40px;
+    text-shadow: 5px 5px 20px rgba(184, 27, 27, 0.84);
+    z-index: 2;
+}
+
+.titulo h2{
+    margin-top: 4px;
+    margin-bottom: 0;
+    text-shadow: 5px 5px 20px rgba(184, 27, 27, 0.84);
+    z-index: 2;
+}
+.titulo img{
+    max-width: 200px;
+    z-index: 2;
+}

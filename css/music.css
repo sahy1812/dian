@@ -1,0 +1,35 @@
+:root{
+    --item-img-size: 45px;
+    --item-img-position: 10px;
+    --background-music: rgba(255, 255, 255, 0.7);
+}
+
+/* MUSIC */
+
+#toggleButton {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border: none;
+    z-index: 1;
+}
+
+#toggleButton img{
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7); 
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7);
+    padding: 2px;
+    background: var(--background-music);
+    cursor: pointer;
+    position: fixed;
+    right: var(--item-img-position);
+    bottom: var(--item-img-position);
+    width: var( --item-img-size);
+    height: var( --item-img-size);
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+}
